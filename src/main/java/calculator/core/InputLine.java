@@ -19,4 +19,8 @@ public final class InputLine {
 		if (value.charAt(1) != '/')	return false;
 		return true;
 	}
+
+	public String raw() {
+		return value;
+	}
 }
