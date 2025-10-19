@@ -12,4 +12,11 @@ public final class InputLine {
 	public boolean isEmpty() {
 		return value.isEmpty();
 	}
+
+	public boolean hasHeader() {
+		if (value.length() < 2)	return false;
+		if (value.charAt(0) != '/')	return false;
+		if (value.charAt(1) != '/')	return false;
+		return true;
+	}
 }
