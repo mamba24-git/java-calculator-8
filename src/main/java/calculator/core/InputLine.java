@@ -13,10 +13,11 @@ public final class InputLine {
 		return value.isEmpty();
 	}
 
-	public boolean hasHeader() {
-		if (value.length() < 2)	return false;
+	public boolean hasCustom() {
+		if (value.length() < 4)	return false;
 		if (value.charAt(0) != '/')	return false;
 		if (value.charAt(1) != '/')	return false;
+		if (value.charAt(3) != '\n') return false;
 		return true;
 	}
 
