@@ -12,4 +12,7 @@ public class Sum {
 		value = value + v;
 	}
 
+	public int toInt() {
+		return value;
+	}
 }
