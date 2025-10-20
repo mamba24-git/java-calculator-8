@@ -17,8 +17,9 @@ public final class InputLine {
 		if (value.length() < 4)	return false;
 		if (value.charAt(0) != '/')	return false;
 		if (value.charAt(1) != '/')	return false;
-		if (value.charAt(3) != '\n') return false;
-		return true;
+		if (value.charAt(3) == '\n') return true;
+		if (value.length() >= 5 && value.charAt(3) == '\\' && value.charAt(4) == 'n') return true;
+		return false;
 	}
 
 	public String raw() {
