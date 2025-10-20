@@ -17,4 +17,13 @@ public class Delimiters {
 		b[2] = value.charAt(2);
 		return new Delimiters(b, 3);
 	}
+
+	public boolean contains(char c) {
+		int i = 0;
+		while (i < size) {
+			if (buf[i] == c) return true;
+			i = i + 1;
+		}
+		return false;
+	}
 }
