@@ -27,7 +27,9 @@ public final class StringScanner {
 
 		while (i < n) {
 			char d = s.charAt(i);
-			if (!delims.contains(d)) throw new IllegalArgumentException("허용되지 않은 구분자 입력: " + d);
+			if (!delims.contains(d)) {
+				throw new IllegalArgumentException("허용되지 않은 구분자 입력: " + d);
+			}
 			i = i + 1;
 
 			if (i >= n) throw new IllegalArgumentException("입력 형식 오류");
@@ -51,7 +53,9 @@ public final class StringScanner {
 
 		while (i < n) {
 			char d = s.charAt(i);
-			if (!delims.contains(d)) throw new IllegalArgumentException("허용되지 않은 구분자 입력: " + d);
+			if (!delims.contains(d)) {
+				throw new IllegalArgumentException("허용되지 않은 구분자 입력: " + d);
+			}
 			i = i + 1;
 
 			if (i >= n) throw new IllegalArgumentException("입력 형식 오류");
